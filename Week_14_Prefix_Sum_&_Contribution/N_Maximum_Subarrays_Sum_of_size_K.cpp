@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    long long n;
+    cin >> n;
+    vector<long long> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    long long total_sum = 0;
+
+    // Contribution Technique: Har element arr[i] ki contribution dekhein
+    for (long long i = 0; i < n; i++) {
+        // Ek element arr[i] kitne subarrays mein aayega uska formula:
+        // (Left choices) * (Right choices)
+        long long left_choices = i + 1;
+        long long right_choices = n - i;
+
+        total_sum += arr[i] * left_choices * right_choices;
+    }
+
+    cout << total_sum << "\n";
+
+    return 0;
+}

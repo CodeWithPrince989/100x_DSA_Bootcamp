@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int n;
+    cin >> n;
+    vector<long long> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    long long total_sum=0;
+    // Har starting index i ke liye
+    for (int i = 0; i < n; i++) {
+      long long current_sum = 0;
+        // Ending index j ko i se aage badhayein
+        for (int j = i; j < n; j++) {
+            current_sum += arr[j];
+          total_sum += current_sum;
+        }
+      
+    }
+    cout<<total_sum;
+
+
+    return 0;
+}
