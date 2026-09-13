@@ -12,7 +12,7 @@ int main() {
         cin>>arr[i];
     }
 
-    
+    //Taking Target To Search
     int target;
     cin>>target;
 
