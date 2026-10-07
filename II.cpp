@@ -11,7 +11,6 @@ int main() {
     long long div = a / b;
     long long mod = a % b;
     
-    // Notice the extra << endl at the end of each print to create the blank lines
     cout << a << " + " << b << " = " << add << endl << endl;
     cout << a << " - " << b << " = " << sub << endl << endl;
     cout << a << " * " << b << " = " << mul << endl << endl;
