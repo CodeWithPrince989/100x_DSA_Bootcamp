@@ -1,3 +1,3 @@
-        for(int j=2; j<=i; j++){
+        for(int k=1; k<=i; k++){
             cout<<" ";
         }
