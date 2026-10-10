@@ -1,15 +1,26 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-void greet(int n){
-  for(int i=n; i>=1; --i){
-    if(n%i==0){
-      cout<<i<<" ";
-    }
-  }
+using ll = long long;
+using vi = vector<int>;
+using vll = vector<ll>;
+
+const int MOD = 1e9 + 7;
+const int INF = 1e9;
+
+void solve() {
+
 }
 
-int main(){
-  greet(12);
-return 0;
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t = 1;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
 }
