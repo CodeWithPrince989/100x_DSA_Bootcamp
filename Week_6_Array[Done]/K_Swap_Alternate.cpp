@@ -20,7 +20,6 @@ int main() {
           r += 1;
       }
 
-        cout << "Final array: ";
         for (int i = 0; i < n; i++) {
             cout << arr[i] << " ";
         }
